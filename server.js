@@ -17,11 +17,13 @@ app.use(bodyParser.json({type:"application/vnd.api+json"}));
 app.use(express.static("app/public"));
 
 //Requires routing .js files
-require("./app/routing/api-routes.js")(app);
-require("./app/routing/html-routes.js")(app);
+require("./app/routing/apiRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 //Listens on port
-app.listen(port,() => console.log ("Listening on port%s", port));
+app.listen(PORT, function () {
+    console.log('App listening on PORT: ' + PORT);
+  });
 
 
 

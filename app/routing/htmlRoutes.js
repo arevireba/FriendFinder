@@ -1,7 +1,7 @@
 // Requires the Path
 var path = require('path');
 
-// Runs the exports function from Friends JS as with app below to get and pull requests
+// Runs the exports function from Computers JS as with app below to get and pull requests
 
 module.exports = function(app){
 
